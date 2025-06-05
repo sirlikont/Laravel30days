@@ -3,6 +3,5 @@
         Home Page
     </x-slot:heading>
 
-    <h1>Welcome to Our Website Home Page</h1>
-    <p>We are glad to have you here!</p>
+    <h1>Welcome to the Home Page!</h1>
 </x-layout>
