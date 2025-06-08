@@ -63,7 +63,7 @@
 
                         <div class="mt-2">
 
-                            <x-form-input type="password_confirmation" name="password_confirmation" id="password_confirmation"  placeholder="Confirm Password" required />
+                            <x-form-input type="password" name="password_confirmation" id="password_confirmation"  placeholder="Confirm Password" required />
 
                             <x-form-error name='password_confirmation' />
 

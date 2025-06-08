@@ -15,7 +15,7 @@
 
                         <div class="mt-2">
 
-                            <x-form-input name="email" id="email"  placeholder="Email" required />
+                            <x-form-input name="email" id="email" type="email" :value="old('email')" placeholder="Email" required />
 
                             <x-form-error name='email' />
 
