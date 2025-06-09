@@ -4,16 +4,21 @@ use App\Http\Controllers\JobController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\SessionController;
+use App\Jobs\TranslateJob;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail\App\Mail\JobPosted;
 use App\Models\Job;
 
-//Route::get('test', function() {
-//    //return new \App\Mail\JobPosted();
-//    \Illuminate\Support\Facades\Mail::to('sirlikont@gmail.com')->send(new \App\Mail\JobPosted());
-//    return 'Mail sent successfully!';
-//});
+Route::get('test', function() {
+
+    $job = Job::first();
+
+    TranslateJob::dispatch($job);
+
+    return 'Done!';
+
+});
 
 Route::view('/', 'home');
 Route::view('/contact', 'contact');
