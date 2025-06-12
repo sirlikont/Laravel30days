@@ -30,6 +30,9 @@ npm install && npm run build
 # Seadista keskkond
 cp .env.example .env
 
+# Genereeri key
+php artisan key:generate
+
 # Käivita andmebaas (vajadusel muuda .env faili)
 php artisan migrate --seed
 
